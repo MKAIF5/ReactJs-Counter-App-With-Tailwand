@@ -1,4 +1,4 @@
-import React from 'react'
+import Switcher from "./Switcher"
 
 function Counter() {
     return (
@@ -27,8 +27,7 @@ function Counter() {
                     </div>
                     <br /><br />
                     <div>
-                        <ReactSwitch className=''
-                            onChange={toggleTheme} checked={theme === "dark"} />
+                        <Switcher />
                     </div>
                 </div>
             </div>
