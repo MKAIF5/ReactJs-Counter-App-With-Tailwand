@@ -6,7 +6,9 @@ function App() {
   return (
 
     <>
-      <Counter />
+      <div style={{ backgroundColor: "bisque", width: "100%", height: "100vh" }}>
+        <Counter />
+      </div>
     </>
   )
 }
