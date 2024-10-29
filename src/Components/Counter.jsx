@@ -17,15 +17,16 @@ function Counter() {
                         p-2 w-36 rounded-full'>Add</button>
                     </div>
                     <br />
-                    <div className='mx-auto bg-slate-200 p-3
-                    w-32'>
+                    <div>
                         <p className='text-center'>0</p>
                     </div>
                     <br />
                     <div className='flex justify-center'>
                         <button className='bg-yellow-400 text-white
-                        p-2 w-36 rounded-full'>Add</button>
+                        p-2 w-36 rounded-full'>Sub</button>
                     </div>
+                    <br /><br />
+
                 </div>
             </div>
         </>
