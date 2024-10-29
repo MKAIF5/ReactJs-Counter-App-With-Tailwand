@@ -6,6 +6,10 @@ function App() {
 
   const [theme, setTheme] = useState("light")
 
+  const toggleTheme = () => {
+    setTheme((curr) => (curr === "light" ? "dark" : "light"))
+  }
+
   return (
     <>
       <ThemeContext.Provider value={{ theme, toggleTheme }}>
@@ -13,8 +17,6 @@ function App() {
           id={theme}
           style={{ backgroundColor: "bisque", width: "100%", height: "100vh" }}>
           <Counter />
-          <ReactSwitch className='relative bottom-20'
-            onChange={toggleTheme} checked={theme === "dark"} />
         </div>
       </ThemeContext.Provider >
 

@@ -26,7 +26,10 @@ function Counter() {
                         p-2 w-36 rounded-full'>Sub</button>
                     </div>
                     <br /><br />
-
+                    <div>
+                        <ReactSwitch className=''
+                            onChange={toggleTheme} checked={theme === "dark"} />
+                    </div>
                 </div>
             </div>
         </>
