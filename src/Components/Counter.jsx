@@ -3,7 +3,6 @@ import { createContext, useState } from 'react'
 
 export const ThemeContext = createContext(null);
 
-
 function Counter() {
 
     const [num, setNum] = useState(0);
@@ -13,10 +12,9 @@ function Counter() {
         setTheme((curr) => (curr === "light" ? "dark" : "light"))
     };
 
-
     return (
-        <>
 
+        <>
             <ThemeContext.Provider value={{ theme, toggleTheme }}>
                 <div className='flex justify-center items-center h-full' id={theme}>
                     <div id='container' className='p-6 bg-white w-96 rounded-3xl'>
@@ -55,6 +53,7 @@ function Counter() {
                 </div>
             </ThemeContext.Provider >
         </>
+
     )
 }
 
