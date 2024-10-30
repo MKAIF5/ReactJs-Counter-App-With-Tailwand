@@ -19,18 +19,20 @@ function Counter() {
 
             <ThemeContext.Provider value={{ theme, toggleTheme }}>
                 <div className='flex justify-center items-center h-full' id={theme}>
-                    <div className='p-6 bg-white w-96 rounded-3xl'>
+                    <div id='container' className='p-6 bg-white w-96 rounded-3xl'>
                         <div>
-                            <h1 className='text-center text-3xl text-yellow-400
+                            <h1 id='heading' className='text-center text-3xl text-yellow-400
                         font-mono font-semibold'>Counter App</h1>
                         </div>
                         <br /><br />
                         <div className='flex justify-center'>
                             <button className='bg-yellow-400 text-white
-                        p-2 w-36 rounded-full'
+                        p-2 w-36 rounded-full font-semibold italic'
                                 onClick={() => {
                                     setNum(num + 1)
-                                }}>Add</button>
+                                }}
+                                id='btn'
+                            >Add</button>
                         </div>
                         <br />
                         <div>
@@ -39,8 +41,10 @@ function Counter() {
                         <br />
                         <div className='flex justify-center'>
                             <button className='bg-yellow-400 text-white
-                        p-2 w-36 rounded-full'
-                                onClick={() => { setNum(num - 1) }}>Sub</button>
+                        p-2 w-36 rounded-full font-semibold italic'
+                                onClick={() => { setNum(num - 1) }}
+                                id='btn'
+                            >Sub</button>
                         </div>
                         <br /><br />
                         <div>

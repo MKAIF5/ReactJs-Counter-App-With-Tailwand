@@ -2,3 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+#dark{
+  background-color: rgb(110, 89, 63);
+}
+
+#dark #container{
+    background-color: rgb(151, 130, 67);
+}
+
+#dark #heading{
+    color: white;
+}
+
+#dark #btn{
+    background-color: white;
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+}
