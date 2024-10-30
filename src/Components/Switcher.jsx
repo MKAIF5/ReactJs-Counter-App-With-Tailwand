@@ -16,7 +16,7 @@ function Switcher() {
         <>
             <ThemeContext.Provider value={{ theme, toggleTheme }}>
                 <div className='app' id={theme}>
-                    <ReactSwitch className='fixed-button'
+                    <ReactSwitch className='fixed left-36'
                         onChange={toggleTheme} checked={theme === "dark"} />
                 </div>
             </ThemeContext.Provider >

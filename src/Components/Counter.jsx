@@ -3,9 +3,7 @@ import Switcher from "./Switcher"
 
 function Counter() {
 
-    const [num, setNum] = useState(1);
-
-
+    const [num, setNum] = useState(0);
 
         return (
             <>
